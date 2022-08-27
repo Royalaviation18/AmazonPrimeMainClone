@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Amazon Prime Clone</string>
+    <string name="copyRight">© 1996-2022, Amazon.com, Inc. or its affiliates</string>
+    <string name="terms">By creating an account, you agree to Amazon\'s Conditions of use and Privacy Notice</string>
+</resources>

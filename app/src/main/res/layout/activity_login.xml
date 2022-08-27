@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/logoBg"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/bgLogo"
+        android:layout_width="310dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvSlogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bgLogo"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Sign-In"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSlogan"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/signBtnColor" />
+    
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvForgot"
+        android:background="@color/white"
+        android:hint=" Phone number"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:textColorHint="@color/hintColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/etPhone"
+        android:background="@color/white"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:textColorHint="@color/hintColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"/>
+
+    <CheckBox
+        android:id="@+id/chkShowPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:buttonTint="@color/white"
+        android:text="Show Password"
+        android:textColor="@color/white"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/chkShowPass"
+        android:background="@color/signBtnColor"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:text="Sign-In"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By signing in, you agree to the Prime Video terms of Use and license agreements which can be found on the amazon website"
+        android:textColor="@color/hintColor"
+        android:gravity="start"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnSignIn"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New to Amazon?"
+        android:layout_below="@id/tvTerms"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="150dp"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvNew"
+        android:background="@color/buttonBg"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Create a new Amazon account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvCopyRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignUp"
+        android:text="@string/copyRight"
+        android:textColor="@color/hintColor"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="55dp"/>
+</RelativeLayout>
